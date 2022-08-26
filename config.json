@@ -1,5 +1,5 @@
 {
-  "apiKey": "<API_KEY>",
+  "apiKey": "185778ee-8d01-40b1-9841-a6011dd4406f",
   "baseUrl": "https://api.opsgenie.com",
   "logLevel": "DEBUG",
   "globalArgs": [],
@@ -32,7 +32,7 @@
       "env": [],
       "stdout": "/home/opsgenie/oec/output/stdout.txt",
       "stderr": "/home/opsgenie/oec/output/stderr.txt"
-    },
+    }
   },
   "pollerConf": {
     "pollingWaitIntervalInMillis": 100,
