@@ -38,8 +38,8 @@ def main():
   alert_details = queue_message.get('params').get('alertDetails')
 
   # get view_OutputURL
-  url = "http://" + alert_details.view_OutputURL
-  logger.info("webLink - view_OutputURL={}".format(url));
+  url = "http://" + alert_details.get('view_OutputURL')
+  logging.info("webLink - view_OutputURL={}".format(url));
 
   # get url to execute
   res = requests.get(url)

@@ -38,8 +38,8 @@ def main():
   alert_details = queue_message.get('params').get('alertDetails')
 
   # get bypassURL
-  url = "http://" + alert_details.bypassURL
-  logger.info("webLink - bypassURL={}".format(url));
+  url = "http://" + alert_details.get('bypassURL')
+  logging.info("webLink - bypassURL={}".format(url));
 
   # get url to execute
   response = requests.get(url)

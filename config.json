@@ -1,5 +1,5 @@
 {
-  "apiKey": "185778ee-8d01-40b1-9841-a6011dd4406f",
+  "apiKey": "",
   "baseUrl": "https://api.opsgenie.com",
   "logLevel": "DEBUG",
   "globalArgs": [],

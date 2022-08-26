@@ -24,13 +24,12 @@ def main():
   queue_message = json.loads(queue_message_string)
   alert_id = queue_message["alert"]["alertId"]
 
-
   # get alert details
   alert_details = queue_message.get('params').get('alertDetails')
 
   # get cancelParentWorkflowURL
-  url = "http://" + alert_details.cancelParentWorkflowURL
-  logger.info("webLink - cancelParentWorkflowURL={}".format(url));
+  url = "http://" + alert_details.get('cancelParentWorkflowURL')
+  logging.info("webLink - cancelParentWorkflowURL={}".format(url));
 
   # get url to execute
   res = requests.get(url)

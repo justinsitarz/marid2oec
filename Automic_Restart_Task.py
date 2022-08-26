@@ -28,8 +28,8 @@ def main():
   alert_details = queue_message.get('params').get('alertDetails')
 
   # get restartURL
-  url = "http://" + alert_details.restartURL
-  logger.info("webLink - restartURL={}".format(url));
+  url = "http://" + alert_details.get('restartURL')
+  logging.info("webLink - restartURL={}".format(url));
 
   # get url to execute
   res = requests.get(url)
