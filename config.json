@@ -2,21 +2,37 @@
   "apiKey": "<API_KEY>",
   "baseUrl": "https://api.opsgenie.com",
   "logLevel": "DEBUG",
-  "globalArgs": [
-    "<list_of_args_you_want_to_pass_to_the_scripts>"
-  ],
-  "globalFlags": {
-  },
+  "globalArgs": [],
+  "globalFlags": {},
   "actionMappings": {
-    "Create": {
-      "filepath": "<path_of_script>",
-      "sourceType": "<local | git>",
-      "env": [
-        "e1=v1",
-        "e2=v2"
-      ],
-      "stdout": "<path_of_output_file_of_script>"
-    }
+    "Automic_Bypass_Task": {
+      "filepath": "/home/opsgenie/oec/scripts/Automic_Bypass_Task.py",
+      "sourceType": "local",
+      "env": [],
+      "stdout": "/home/opsgenie/oec/output/stdout.txt",
+      "stderr": "/home/opsgenie/oec/output/stderr.txt"
+    },
+    "Automic_Cancel_Parent_Workflow": {
+      "filepath": "/home/opsgenie/oec/scripts/Automic_Cancel_Parent_Workflow.py",
+      "sourceType": "local",
+      "env": [],
+      "stdout": "/home/opsgenie/oec/output/stdout.txt",
+      "stderr": "/home/opsgenie/oec/output/stderr.txt"
+    },
+    "Automic_Restart_Task": {
+      "filepath": "/home/opsgenie/oec/scripts/Automic_Restart_Task.py",
+      "sourceType": "local",
+      "env": [],
+      "stdout": "/home/opsgenie/oec/output/stdout.txt",
+      "stderr": "/home/opsgenie/oec/output/stderr.txt"
+    },
+    "Automic_View_Task_Output": {
+      "filepath": "/home/opsgenie/oec/scripts/Automic_View_Task_Output.py",
+      "sourceType": "local",
+      "env": [],
+      "stdout": "/home/opsgenie/oec/output/stdout.txt",
+      "stderr": "/home/opsgenie/oec/output/stderr.txt"
+    },
   },
   "pollerConf": {
     "pollingWaitIntervalInMillis": 100,
